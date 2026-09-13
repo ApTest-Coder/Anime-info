@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: anime-hindi-dub-bot
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python bot.py
+    healthCheckPath: /health
+    envVars:
+      - key: TELEGRAM_BOT_TOKEN
+        sync: false # set this in the Render dashboard -- never commit it
+      - key: PORT
+        value: 10000
+      - key: PYTHONUNBUFFERED
+        value: "1"
+      - key: RENDER_EXTERNAL_URL
+        value: ""

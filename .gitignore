@@ -1,0 +1,47 @@
+# ============ Secrets ============
+.env
+.env.local
+.env.*.local
+*.key
+*.pem
+
+# ============ Python ============
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# ============ Virtual environments ============
+venv/
+.venv/
+env/
+.v/
+ENV/
+
+# ============ Testing & linting ============
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+.tox/
+
+# ============ Runtime data ============
+anime_cache/
+logs/
+*.log
+
+# ============ IDE / OS ============
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+
+# ============ Cachedir ============
+CACHEDIR.TAG
